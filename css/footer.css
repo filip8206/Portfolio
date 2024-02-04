@@ -1,0 +1,28 @@
+footer {
+    background-color: var(--color-header);
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#footerContents {
+    color: var(--color-text-contrast);
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100dvw;
+    max-width: 80em;
+    line-height: 2em;
+}
+
+footer img {
+    filter: invert(2);
+    width: 2em;
+}
+
+#socials {
+    display: flex;
+    gap: 1em;
+}

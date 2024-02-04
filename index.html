@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Adobe Fonts Komet -->
+    <link rel="stylesheet" href="https://use.typekit.net/wgu5leo.css">
+    <link rel="stylesheet" href="./css/styling.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/x-icon" href="/images/icons/favicon.png">
+    <title>Portfolio of Filip Hensels</title>
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a>Home</a>
+                </li>
+                <li id="projects">
+                    <a>Projects</a>
+                    <ul id="projectsDropdown">
+                        <li>
+                            Front-end development project
+                        </li>
+                        <li>
+                            First JavaScript Project
+                        </li>
+                        <li>
+                            Tostada cooking-app
+                        </li>
+                        <li>
+                            PinqPonq Studio
+                        </li>
+                        <li>
+                            De Boekenzoeker
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>About me</a>
+                </li>
+            </ul>
+            <a>
+                <h2>Filip Hensels</h2>
+            </a>
+            <div></div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Hello, I'm <span class="name">Filip</span>!</h1>
+            <p>Thank you for taking a look at my portfolio.</p>
+        </section>
+        <a>
+            <section class="item">
+                <h2>Front-end development project</h2>
+                <p class="tagDev">Development</p>
+                <p>
+                    The goal of this project was to replicate two pages of an existing website, coding it entirely from
+                    scratch using HTML, CSS and JavaScript. In this project, I chose two pages from the Duolingo website
+                    to replicate.
+                </p>
+                <!-- <img src="./images/duolingo1.png" alt="A screenshot of the homescreen of Duolingo"> -->
+                <img src="./images/duolingo2.png" alt="A screenshot of the levels screen of Duolingo">
+            </section>
+        </a>
+        <a>
+            <section class="item">
+                <h2>First JavaScript project</h2>
+                <p class="tagDev">Development</p>
+                <p>
+                    During this project, I used JavaScript for the first time. Using only HTML, CSS and JS, I made the
+                    game
+                    'Loves me..?' from the Nintendo DS.
+                </p>
+                <img src="./images/lovesme1.png"
+                    alt="The homepage of the Loves Me website, showing a flower with two buttons.">
+            </section>
+        </a>
+        <a>
+            <section class="item">
+                <h2>Tostada cooking-app</h2>
+                <p class="tagUxUi">UX/UI</p>
+                <p>
+                    This group project was all about one single recipe, the Mexican tostada. The goal was to create a
+                    tostada-themed app that instructs users to cook a delicious tostada themselves.
+                </p>
+                <img src="./images/tostada1.png"
+                    alt="The zero state of the tostada cooking app, showing an illustration of a happy cook">
+            </section>
+        </a>
+        <a>
+            <section class="item">
+                <h2>PinqPonq Studio</h2>
+                <p class="tagUi">UI Design</p>
+                <p>
+                    The PinqPonq Studio design challenge was a website where you can create your own PinqPonq messenger
+                    bag. The main focus was to create an intuitive user interface that contained the numerous
+                    customization options the user can choose between.
+                </p>
+                <img src="./images/pinqponq1.png"
+                    alt="A page of the pinqponq website showing an illustration of a bag along with options to customize it.">
+            </section>
+        </a>
+        <a>
+            <section class="item">
+                <h2>De Boekenzoeker</h2>
+                <p class="tagUi">UI Design</p>
+                <p>
+                    De Boekenzoeker is an app that helps people find their perfect book. During this
+                    project, the primary focus was to implement an existing design system into an intuitive user
+                    interface suited for a tablet on a stand in a public library.
+                </p>
+                <img src="./images/boekenzoeker1.png"
+                    alt="The welcome screen of the boekenzoeker app showing welcoming text with bookscovers the background.">
+            </section>
+        </a>
+    </main>
+    <footer>
+        <div id="footerContents">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About me</a></li>
+            </ul>
+            <ul>
+                <li><a>Front-end development project</a></li>
+                <li><a>First JavaScript Project</a></li>
+                <li><a>Tostada cooking-app</a></li>
+                <li><a>PinqPonq Studio</a></li>
+                <li><a>De Boekenzoeker</a></li>
+            </ul>
+            <div>
+                <p>Filip Hensels<br>fhensels@gmail.com<br>+31 6 12 06 53 94</p>
+                <ul id="socials">
+                    <li><a><img src="/images/icons/linkedin.svg" alt="LinkedIn"></a></li>
+                    <li><a><img src="/images/icons/github.svg" alt="Github"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,150 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section:first-of-type {
+    height: 60dvh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 800;
+}
+
+.name {
+    color: var(--color-blue);
+    animation-name: name;
+    animation-duration: 1.6s;
+    animation-timing-function: steps(1, end);;
+}
+
+@keyframes name {
+    0% {
+        color: var(--color-blue);
+    }
+
+    3% {
+        color: rgb(255, 141, 141);
+    }
+
+    6% {
+        color: rgb(88, 174, 255);
+    }
+    
+    11% {
+        color: #ffcc5f;
+    }
+
+    17% {
+        color: #ff75f1;
+    }
+
+    25% {
+        color: #53b4ec;
+    }
+
+    36% {
+        color: #ff788f;
+    }
+
+    50% {
+        color: #78beff;
+    }
+
+    66% {
+        color: #ffc778;
+    }
+
+    80% {
+        color: #ff7878;
+    }
+
+    100% {
+        color: var(--color-blue);
+    }
+}
+
+section.item {
+    width: 100dvw;
+    max-width: 80em;
+    background-color: var(--color-background-box);
+    margin-bottom: 8em;
+    padding: 1.5em;
+    position: relative;
+    transition-duration: 0.5s;
+    height: 15em;
+}
+
+section.item:hover {
+    background-color: var(--color-background-box-hover);
+}
+
+section.item h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+section.item p {
+    max-width: 35em;
+}
+
+section.item p.tagDev {
+    background-color: rgb(113, 186, 255);
+    border-radius: 5em;
+    padding: 0.2em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    width: max-content;
+}
+
+section.item p.tagUxUi {
+    background-color: rgb(255, 166, 166);
+    border-radius: 5em;
+    padding: 0.2em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    width: max-content;
+}
+
+section.item p.tagUi {
+    background-color: rgb(219, 162, 255);
+    border-radius: 5em;
+    padding: 0.2em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    width: max-content;
+}
+
+section.item img {
+    height: 16em;
+    position: absolute;
+    filter: drop-shadow(0px 0px 10px #22222295);
+    transition-duration: 0.5s;
+}
+
+section.item img:first-of-type {
+    right: 2em;
+    top: -3em;
+}
+
+section.item img:nth-of-type(2) {
+    right: 12em;
+    top: 1em;
+}
+
+section.item:hover img:first-of-type {
+    top: -5em;
+}
+
+section.item:hover img:nth-of-type(2) {
+    top: -2em;
+}
