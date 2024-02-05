@@ -124,6 +124,15 @@ section.item p.tagUi {
     width: max-content;
 }
 
+section.item p.tagUxProduct {
+    background-color: rgb(255, 198, 162);
+    border-radius: 5em;
+    padding: 0.2em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    width: max-content;
+}
+
 section.item img {
     height: 16em;
     position: absolute;

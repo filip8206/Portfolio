@@ -42,3 +42,37 @@ ul {
         animation: none !important;
     }
 }
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 800;
+}
+
+a.bigButton {
+    background-color: var(--color-blue);
+    padding: 1.5em;
+    color: var(--color-text-contrast);
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.2em;
+    box-shadow: 0.5rem 0.5rem 0 var(--color-text);
+    transition-duration: 0.3s;
+}
+
+a.bigButton img {
+    filter: brightness(10);
+    width: 1em;
+}
+
+a.bigButton:hover {
+    box-shadow: 1.5rem 1.5rem 0 var(--color-text);
+    transform: translate(-0.5rem, -0.5rem);
+}
