@@ -76,3 +76,7 @@ a.bigButton:hover {
     box-shadow: 1.5rem 1.5rem 0 var(--color-text);
     transform: translate(-0.5rem, -0.5rem);
 }
+
+img.noMockup {
+    border-radius: 0.8em;
+}
