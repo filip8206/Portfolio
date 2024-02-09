@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="icon" type="image/x-icon" href="/images/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./images/icons/favicon.png">
     <title>Portfolio of Filip Hensels</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
+            <button id="headerButton" aria-label="menu"><img src="./images/icons/arrowdown.svg" alt=""></button>
+            <ul id="navElements">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -48,7 +49,7 @@
                     <a href="about.html">About me</a>
                 </li>
             </ul>
-                <h2>Filip Hensels</h2>
+            <h2>Filip Hensels</h2>
             <div></div>
         </nav>
     </header>
@@ -74,8 +75,11 @@
                 <h2>Climate Claim</h2>
                 <p class="tagUxProduct">UX/Product development</p>
                 <p>
-
+                    This project was all about following your passion. And that's what I did. With two other teammates,
+                    we created a new boardgame from scratch. The theme of this boardgame is to save the earth from
+                    climate change, tile by tile. The player who saves the most tiles of climate change, wins!
                 </p>
+                <img src="./images/climateclaim1.jpg" class="noMockup">
             </section>
         </a>
         <a>
@@ -112,7 +116,7 @@
                     bag. The main focus was to create an intuitive user interface that contained the numerous
                     customization options the user can choose between.
                 </p>
-                <img src="./images/pinqponq1.png" class="noMockup" 
+                <img src="./images/pinqponq1.png" class="noMockup"
                     alt="A page of the pinqponq website showing an illustration of a bag along with options to customize it.">
             </section>
         </a>
@@ -144,15 +148,23 @@
                 <li><a href="./projects/pinqponq.html">PinqPonq Studio</a></li>
                 <li><a href="./projects/boekenzoeker.html">De Boekenzoeker</a></li>
             </ul>
+            <div></div>
             <div>
-                <p>Filip Hensels<br><a href = "mailto: fhensels@gmail.com">fhensels@gmail.com</a><br>+31 6 12 06 53 94</p>
+                <ul>
+                    <li>Filip Hensels</li>
+                    <li><a href="mailto:fhensels@gmail.com">fhensels@gmail.com</a></li>
+                    <li>+31 6 12 06 53 94</li>
+                </ul>
                 <ul id="socials">
-                    <li><a href="https://www.linkedin.com/in/filip-hensels-ab25a8242/"><img src="./images/icons/linkedin.svg" alt="LinkedIn"></a></li>
-                    <li><a href="https://github.com/filip8206?tab=repositories"><img src="./images/icons/github.svg" alt="Github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/filip-hensels-ab25a8242/"><img
+                                src="./images/icons/linkedin.svg" alt="LinkedIn"></a></li>
+                    <li><a href="https://github.com/filip8206?tab=repositories"><img src="./images/icons/github.svg"
+                                alt="Github"></a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script defer src="./js/header.js"></script>
 </body>
 
 </html>

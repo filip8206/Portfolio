@@ -203,7 +203,7 @@ section.demo #iframebuttons {
 }
 
 section.demo button {
-    background-color: var(--color-header);
+    background-color: var(--color-footer);
     border: none;
     padding: 1em;
     color: var(--color-text-contrast);
