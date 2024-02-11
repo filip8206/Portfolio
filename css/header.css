@@ -84,6 +84,14 @@ header nav div {
 
 #projects {
     position: relative;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#projects p {
+    font-size: 1em;
+    margin: 0;
+    width: max-content;
 }
 
 #projectsDropdown {
@@ -174,6 +182,7 @@ header nav div {
         display: grid;
         grid-template-columns: 1fr max-content 1fr;
         grid-template-rows: 4em 1fr;
+        transition-duration: 0.5;
     }
 
     header nav>div {
@@ -239,6 +248,7 @@ header nav div {
     header.mobileExpanded #projects {
         display: block;
         position: static;
+        padding-left: 0;
     }
 
     header.mobileExpanded #projects>p {

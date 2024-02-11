@@ -41,7 +41,7 @@ section:first-of-type img {
     max-height: 30rem;
     max-width: 40%;
     position: absolute;
-    right: 0;
+    right: 1em;
     top: 0;
     filter: drop-shadow(0px 0px 20px #22222295);
 }
@@ -52,6 +52,7 @@ section:first-of-type h1 {
 
 section:first-of-type p {
     font-size: 2em;
+    width: max-content;
 }
 
 section.titleBigPhoto h1 {
@@ -103,6 +104,7 @@ div.photosDesktop {
 div.photosDesktop img {
     max-width: 46%;
     filter: drop-shadow(0px 0px 20px #22222295);
+    align-self: start;
 }
 
 div.photosDesktop img:nth-of-type(1) {
@@ -121,7 +123,7 @@ section.textPhoto {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    height: 40em;
+    height: max-content;
     position: relative;
     margin-bottom: 5em;
 }
@@ -178,7 +180,7 @@ section.specs p:first-of-type {
 
 section.demo {
     display: flex;
-
+    margin-bottom: 1em;
     align-items: center;
     margin-bottom: 5em;
 }
@@ -217,4 +219,113 @@ section.demo button:hover {
 
 section.demo div.iframeContents {
     margin-right: 5em;
+}
+
+@media (max-width: 800px) {
+    div.iframeContents {
+        display: none;
+    }
+
+    main section p {
+        width: 90dvw;
+    }
+
+    main>section:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    main>section:first-of-type h1 {
+        max-width: 100%;
+        font-size: 3em;
+    }
+
+    main>section:first-of-type img {
+        position: static;
+        max-width: 70dvw;
+        max-height: 30em;
+    }
+
+    div.photosMobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2em;
+    }
+
+    div.photosMobile img {
+        max-width: 40%;
+    }
+
+    div.photosMobile img:nth-of-type(3) {
+        margin-top: 0;
+    }
+
+    section.textPhoto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.textPhoto div {
+        max-width: 90dvw;
+        text-align: start;
+        margin: 0;
+    }
+
+    section.textPhoto p {
+        width: 90dvw;
+    }
+
+    section.textPhoto img {
+        order: 1;
+        max-width: 70dvw;
+        max-height: 30em;
+        margin: 0;
+    }
+
+    section.specs {
+        margin-bottom: 1em;
+    }
+
+    section.textOnly {
+        margin-bottom: 0;
+    }
+
+    section.titleBigPhoto img {
+        width: 30em;
+        max-width: 90dvw;
+    }
+
+    div.photosDesktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    div.photosDesktop img {
+        width: 30em;
+        max-width: 90dvw;
+    }
+
+    div.photosDesktop img:nth-of-type(1) {
+        align-self: start;
+        margin: 0;
+    }
+
+    div.photosDesktop img:nth-of-type(2) {
+        align-self: end;
+        margin: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    main>section:first-of-type h1 {
+        font-size: 2em;
+    }
 }

@@ -17,35 +17,36 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <button id="headerButton" aria-label="menu"><img src="../images/icons/arrowdown.svg" alt=""></button>
+            <ul id="navElements">
                 <li>
-                    <a href="../index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li id="projects">
-                    <a>Projects</a>
+                    <p>Projects</p>
                     <ul id="projectsDropdown">
                         <li>
-                            <a href="../projects/fedproject.html">Front-end development project</a>
+                            <a href="./projects/fedproject.html">Front-end development project</a>
                         </li>
                         <li>
-                            <a href="../projects/climateclaim.html">Climate Claim</a>
+                            <a href="./projects/climateclaim.html">Climate Claim</a>
                         </li>
                         <li>
-                            <a href="../projects/jsproject.html">First JavaScript Project</a>
+                            <a href="./projects/jsproject.html">First JavaScript Project</a>
                         </li>
                         <li>
-                            <a href="../projects/tostada.html">Tostada cooking-app</a>
+                            <a href="./projects/tostada.html">Tostada cooking-app</a>
                         </li>
                         <li>
-                            <a href="../projects/pinqponq.html">PinqPonq Studio</a>
+                            <a href="./projects/pinqponq.html">PinqPonq Studio</a>
                         </li>
                         <li>
-                            <a href="../projects/boekenzoeker.html">De Boekenzoeker</a>
+                            <a href="./projects/boekenzoeker.html">De Boekenzoeker</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="../about.html">About me</a>
+                    <a href="about.html">About me</a>
                 </li>
             </ul>
             <h2>Filip Hensels</h2>
@@ -130,15 +131,20 @@
                 <li><a href="about.html">About me</a></li>
             </ul>
             <ul>
-                <li><a href="../projects/fedproject.html">Front-end development project</a></li>
-                <li><a href="../projects/climateclaim.html">Climate Claim</a></li>
-                <li><a href="../projects/jsproject.html">First JavaScript Project</a></li>
-                <li><a href="../projects/tostada.html">Tostada cooking-app</a></li>
-                <li><a href="../projects/pinqponq.html">PinqPonq Studio</a></li>
-                <li><a href="../projects/boekenzoeker.html">De Boekenzoeker</a></li>
+                <li><a href="./fedproject.html">Front-end development project</a></li>
+                <li><a href="./climateclaim.html">Climate Claim</a></li>
+                <li><a href="./jsproject.html">First JavaScript Project</a></li>
+                <li><a href="./tostada.html">Tostada cooking-app</a></li>
+                <li><a href="./pinqponq.html">PinqPonq Studio</a></li>
+                <li><a href="./boekenzoeker.html">De Boekenzoeker</a></li>
             </ul>
+            <div></div>
             <div>
-                <p>Filip Hensels<br><a href="mailto: fhensels@gmail.com">fhensels@gmail.com</a><br>+31 6 12 06 53 94</p>
+                <ul>
+                    <li>Filip Hensels</li>
+                    <li><a href="mailto:fhensels@gmail.com">fhensels@gmail.com</a></li>
+                    <li>+31 6 12 06 53 94</li>
+                </ul>
                 <ul id="socials">
                     <li><a href="https://www.linkedin.com/in/filip-hensels-ab25a8242/"><img
                                 src="../images/icons/linkedin.svg" alt="LinkedIn"></a></li>
@@ -149,6 +155,7 @@
         </div>
     </footer>
     <script defer src="../js/FEDproject.js"></script>
+    <script defer src="../js/header.js"></script>
 </body>
 
 </html>
