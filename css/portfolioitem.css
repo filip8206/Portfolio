@@ -362,6 +362,17 @@ section.dateList li p:last-of-type {
         margin: 0;
     }
 
+    section.textPhoto.mirrored {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.textPhoto.mirrored div {
+        max-width: 90dvw;
+        text-align: start;
+        margin: 0;
+    }
+
     section.specs {
         margin-bottom: 1em;
     }
