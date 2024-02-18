@@ -132,7 +132,6 @@ section.textPhoto img {
     max-height: 35rem;
     max-width: 45%;
     order: -1;
-    margin-left: 2em;
     filter: drop-shadow(0px 0px 20px #22222295);
 }
 
@@ -143,6 +142,20 @@ section.textPhoto>div {
     margin-left: 4em;
     flex-direction: column;
     justify-content: end;
+}
+
+section.textPhoto.mirrored {
+    text-align: start;
+}
+
+section.textPhoto.mirrored img {
+    order: 2;
+}
+
+section.textPhoto.mirrored>div {
+    justify-content: start;
+    margin-left: 0;
+    margin-right: 4em;
 }
 
 section.textPhoto>div p {
@@ -185,7 +198,7 @@ section.demo {
     margin-bottom: 5em;
 }
 
-section.demo div:first-of-type{
+section.demo div:first-of-type {
     order: 1;
 }
 
@@ -219,6 +232,69 @@ section.demo button:hover {
 
 section.demo div.iframeContents {
     margin-right: 5em;
+}
+
+section.aboutTitle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+section.aboutTitle div {
+    width: 100%;
+    margin-left: 3em;
+}
+
+section.aboutTitle h1 {
+    margin: 0;
+    height: max-content;
+    width: max-content;
+    max-width: 85%;
+}
+
+section.aboutTitle img {
+    position: initial;
+    order: -1;
+    filter: none;
+}
+
+section.aboutTitle ul {
+    width: max-content;
+}
+
+section.aboutTitle li {
+    font-size: 1.5em;
+    margin-left: 1em;
+    padding-left: 0.5em;
+    list-style-type: disc;
+    width: max-content;
+    max-width: 100%;
+    text-wrap: wrap;
+}
+
+section.dateList {
+    margin-bottom: 5em;
+}
+
+section.dateList li {
+    display: flex;
+    flex-direction: row;
+}
+
+section.dateList li p:first-of-type {
+    width: 25dvw;
+    max-width: 10em;
+    font-weight: 600;
+}
+
+section.dateList li p:last-of-type {
+    width: 100%;
+}
+
+#portrait {
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.175);
+    width: 20em;
 }
 
 @media (max-width: 800px) {
@@ -290,7 +366,21 @@ section.demo div.iframeContents {
         margin-bottom: 1em;
     }
 
-    section.textOnly {
+    section.textOnly,
+    section.dateList {
+        margin-bottom: 0;
+    }
+
+    section.dateList li {
+        display: block;
+    }
+
+    section.dateList li p {
+        max-width: 100% !important;
+        width: max-content !important;
+    }
+
+    section.dateList li p:first-of-type {
         margin-bottom: 0;
     }
 
@@ -321,6 +411,22 @@ section.demo div.iframeContents {
     div.photosDesktop img:nth-of-type(2) {
         align-self: end;
         margin: 0;
+    }
+
+    section.aboutTitle {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    section.aboutTitle div {
+        margin: 0;
+        margin-top: 2em;
+    }
+
+    section.aboutTitle div h1 {
+        width: 100%;
     }
 }
 

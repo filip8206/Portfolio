@@ -13,6 +13,11 @@ main>section:first-of-type {
     justify-content: center;
 }
 
+main>section:first-of-type p {
+    max-width: 35em;
+    font-size: 1.2em;
+}
+
 h1 {
     font-size: 5em;
     font-weight: 800;
@@ -71,11 +76,14 @@ h1 {
     }
 }
 
+main a {
+    margin-bottom: 8em;
+}
+
 section.item {
     width: 100dvw;
     max-width: 80em;
     background-color: var(--color-background-box);
-    margin-bottom: 8em;
     padding: 1.5em;
     position: relative;
     transition-duration: 0.5s;
@@ -99,45 +107,45 @@ section.item p {
     max-width: 50%;
 }
 
-section.item p.tagDev {
+p.tagDev {
     background-color: rgb(113, 186, 255);
     border-radius: 5em;
     padding: 0.2em;
     padding-left: 0.6em;
     padding-right: 0.6em;
-    width: max-content;
-    height: max-content;
+    width: max-content !important;
+    height: max-content !important;
 }
 
-section.item p.tagUxUi {
+p.tagUxUi {
     background-color: rgb(255, 166, 166);
     border-radius: 5em;
     padding: 0.2em;
     padding-left: 0.6em;
     padding-right: 0.6em;
-    width: max-content;
-    height: max-content;
+    width: max-content !important;
+    height: max-content !important;
 
 }
 
-section.item p.tagUi {
+p.tagUi {
     background-color: rgb(219, 162, 255);
     border-radius: 5em;
     padding: 0.2em;
     padding-left: 0.6em;
     padding-right: 0.6em;
-    width: max-content;
-    height: max-content;
+    width: max-content !important;
+    height: max-content !important;
 }
 
-section.item p.tagUxProduct {
+p.tagUxProduct {
     background-color: rgb(255, 198, 162);
     border-radius: 5em;
     padding: 0.2em;
     padding-left: 0.6em;
     padding-right: 0.6em;
-    width: max-content;
-    height: max-content;
+    width: max-content !important;
+    height: max-content !important;
 }
 
 section.item img {
@@ -164,6 +172,27 @@ section.item:hover img:first-of-type {
 
 section.item:hover img:nth-of-type(2) {
     top: -2em;
+}
+
+section.inProgress {
+    padding: 1em;
+    margin-bottom: 5em;
+    width: 100dvw;
+    max-width: 80em;
+}
+
+section.inProgress h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+section.inProgress h3 {
+    font-weight: 400;
+    margin: 0;
+}
+
+section.inProgress p:last-of-type {
+    max-width: 35em;
 }
 
 @media (max-width: 800px) {

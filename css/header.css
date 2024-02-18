@@ -104,6 +104,7 @@ header nav div {
     display: none;
     width: max-content;
     z-index: 1;
+    border-radius: 1em;
 }
 
 #projectsDropdown li {

@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Adobe Fonts Komet -->
@@ -24,7 +20,7 @@
             <button id="headerButton" aria-label="menu"><img src="../images/icons/arrowdown.svg" alt=""></button>
             <ul id="navElements">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li id="projects">
                     <p>Projects</p>
@@ -50,7 +46,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="about.html">About me</a>
+                    <a href="./about.html">About me</a>
                 </li>
             </ul>
             <h2>Filip Hensels</h2>
@@ -58,12 +54,43 @@
         </nav>
     </header>
     <main>
+        <section class="aboutTitle">
+            <div>
+                <h1>Filip Hensels</h1>
+                <!-- <ul>
+                    <li>Second-year HBO Communication and Multimedia design student</li>
+                    <li>Aspiring creative developer</li>
+                </ul> -->
+            </div>
+            <img src="./images/portrait.png" id="portrait" alt="A photo of Filip.">
+        </section>
+        <section class="textOnly">
+            <h2>About me</h2>
+            <p>
+                I am a second year HBO Communication and Multimedia design student who loves to create beautiful and
+                useful user interfaces and enjoys coding for hours at a time. My goal is to become a talented front-end
+                developer and a creative visual interface designer who turns every UI into a work of art.
+            </p>
+        </section> 
+        <section class="dateList">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <p>2022 - present</p>
+                    <p>HBO Communication and Multimedia design, Cum Laude Propedeuse</p>
+                </li>
+                <li>
+                    <p>2022</p>
+                    <p>HAVO Diploma</p>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer>
         <div id="footerContents">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About me</a></li>
             </ul>
             <ul>
                 <li><a href="./projects/fedproject.html">Front-end development project</a></li>
@@ -73,8 +100,13 @@
                 <li><a href="./projects/pinqponq.html">PinqPonq Studio</a></li>
                 <li><a href="./projects/boekenzoeker.html">De Boekenzoeker</a></li>
             </ul>
-            <div class="iframe">
-                <p>Filip Hensels<br><a href="mailto: fhensels@gmail.com">fhensels@gmail.com</a><br>+31 6 12 06 53 94</p>
+            <div></div>
+            <div>
+                <ul>
+                    <li>Filip Hensels</li>
+                    <li><a href="mailto:fhensels@gmail.com">fhensels@gmail.com</a></li>
+                    <li>+31 6 12 06 53 94</li>
+                </ul>
                 <ul id="socials">
                     <li><a href="https://www.linkedin.com/in/filip-hensels-ab25a8242/"><img
                                 src="./images/icons/linkedin.svg" alt="LinkedIn"></a></li>
@@ -84,5 +116,7 @@
             </div>
         </div>
     </footer>
+    <script defer src="./js/header.js"></script>
 </body>
+
 </html>
