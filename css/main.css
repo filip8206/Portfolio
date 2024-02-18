@@ -200,7 +200,9 @@ section.inProgress p:last-of-type {
     main>section:first-of-type {
         padding-left: 1em;
         padding-right: 1em;
-        height: 50dvh;
+        padding-top: 3em;
+        padding-bottom: 2em;
+        height: max-content;
     }
     
     h1 {
