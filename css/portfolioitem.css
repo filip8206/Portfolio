@@ -169,7 +169,7 @@ section.textOnly {
 section.specs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    row-gap: 1em;
+    row-gap: 3em;
     max-width: 80em;
     margin-bottom: 5em;
 }
@@ -189,6 +189,15 @@ section.specs p:first-of-type {
     font-size: 3em;
     font-weight: 800;
     margin-bottom: 0;
+}
+
+section.specs p:last-of-type {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+section.specs img {
+    height: 4em;
 }
 
 section.demo {
