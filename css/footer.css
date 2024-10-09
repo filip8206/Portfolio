@@ -16,6 +16,10 @@ footer a {
     color: var(--color-text-contrast);
 }
 
+footer a:hover {
+    color: var(--color-blue);
+}
+
 #footerContents {
     color: var(--color-text-contrast);
     margin: 0;

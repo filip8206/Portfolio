@@ -74,7 +74,7 @@ header nav>ul>li {
 
 header nav ul li:hover {
     background-color: var(--color-blue);
-    background: radial-gradient(circle, rgba(109, 125, 222, 1) 0%, rgba(109, 125, 222, 0.7217480742296919) 35%, rgba(109, 125, 222, 0) 100%);
+    background: radial-gradient(circle, rgba(246, 144, 98, 1) 0%, rgba(246, 144, 98, 0.7217480742296919) 35%, rgba(246, 144, 98, 0) 100%);
 }
 
 header nav ul,
