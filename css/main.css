@@ -5,18 +5,20 @@ main {
     align-items: center;
 }
 
-main>section:first-of-type {
+.introduction {
     height: 60dvh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: max-content;
+    position: relative;
 }
 
 main>section:first-of-type p {
     max-width: 35em;
     font-size: 1.2em;
+    background-color: var(--color-background);
 }
 
 h1 {
@@ -29,6 +31,19 @@ h1 {
     animation-name: name;
     animation-duration: 1.6s;
     animation-timing-function: steps(1, end);;
+}
+
+.introduction .circleParticle {
+    fill: var(--color-blue );
+    position: absolute;
+    z-index: -1;
+    width: 1em;
+    left: 50%;
+    display: none;
+}
+
+.introduction div {
+    overflow-x: hidden;
 }
 
 @keyframes name {
@@ -82,18 +97,22 @@ main a {
 }
 
 section.item {
-    width: 100dvw;
+    width: 95dvw;
     max-width: 80em;
-    background-color: var(--color-background-box);
+    background-color: var(--color-background);
     padding: 1.5em;
     position: relative;
     transition-duration: 0.5s;
     height: max-content;
     min-height: 15em;
+    border: 4px rgba(249, 52, 98, 0.4) solid;
+    border-radius: var(--border-radius);
+    position: relative;
 }
 
 section.item:hover {
-    background-color: var(--color-background-box-hover);
+    border: 4px rgba(249, 52, 98, 1) solid;
+    background-color: rgba(249, 52, 98, 0.2);
 }
 
 section.item h2 {
@@ -204,6 +223,10 @@ section.inProgress p:last-of-type {
         padding-bottom: 2em;
         height: max-content;
     }
+
+    main>a {
+        margin-bottom: 4em;
+    }
     
     h1 {
         font-size: 4em;
@@ -211,22 +234,55 @@ section.inProgress p:last-of-type {
     }
 
     section.item {
-        display: flex;
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-template-rows: max-content max-content 1fr;
+        width: 95dvw;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         text-align: center;
+        column-gap: 1em;
+        margin-inline-start: 1em;
+        margin-inline-end: 1em;
+    }
+
+    section.item h2 {
+        width: 100%;
+        max-width: max-content;
+        text-align: start;
+        text-wrap: wrap;
     }
     
     section.item img {
         position: static;
         display: block;
-        max-width: 80%;
+        max-width: 30dvw;
         max-height: 40vh;
         margin-top: 1em;
+        grid-row: 1/4;
+        order: -1;
+        margin: 0;
     }
 
     section.item p {
+        width: 100%;
         max-width: 100%;
+        text-align: start;
+    }
+}
+
+@media (max-width: 500px) {
+    main>a {
+        margin-bottom: 2em;
+    }
+
+    section.item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.item img {
+        order: 1;
     }
 }

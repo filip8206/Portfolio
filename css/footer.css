@@ -5,6 +5,7 @@ footer {
     justify-content: center;
     padding-top: 1em;
     padding-bottom: 2em;
+    position: relative;
 }
 
 footer p {
@@ -14,10 +15,12 @@ footer p {
 
 footer a {
     color: var(--color-text-contrast);
+    transition: 0.2s;
 }
 
 footer a:hover {
     color: var(--color-blue);
+    font-weight: 700;
 }
 
 #footerContents {
@@ -36,14 +39,29 @@ footer a:hover {
     display: none;
 }
 
-footer img {
-    filter: invert(2);
+footer img, footer svg {
     width: 2em;
+    height: 2em;
+    fill: white;
+    transition-duration: 0.2s;
+}
+
+footer svg:hover {
+    fill: var(--color-blue);
 }
 
 #socials {
     display: flex;
     gap: 1em;
+}
+
+#trainGraphic {
+    position: absolute;
+    height: 3em;
+    width: auto;
+    filter: none;
+    top: -3em;
+    right: 0;
 }
 
 @media (max-width: 800px) {
@@ -53,6 +71,10 @@ footer img {
 
     #footerContents div:first-of-type {
         display: inline;
+    }
+
+    footer {
+        margin-top: 3em;
     }
 }
 

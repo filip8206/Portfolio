@@ -172,6 +172,8 @@ section.specs {
     row-gap: 3em;
     max-width: 80em;
     margin-bottom: 5em;
+    text-wrap: wrap;
+    align-items: baseline;
 }
 
 section.specs div {
@@ -182,10 +184,11 @@ section.specs div {
 }
 
 section.specs p {
-    width: max-content;
+    width: 90%;
+    text-align: center;
 }
 
-section.specs p:first-of-type {
+section.specs p.specTitle {
     font-size: 3em;
     font-weight: 800;
     margin-bottom: 0;
@@ -233,6 +236,7 @@ section.demo button {
     color: var(--color-text-contrast);
     font-family: inherit;
     cursor: pointer;
+    transition-duration: 0.3s;
 }
 
 section.demo button:hover {
@@ -288,6 +292,7 @@ section.dateList {
 section.dateList li {
     display: flex;
     flex-direction: row;
+    gap: 1em;
 }
 
 section.dateList li p:first-of-type {
@@ -307,6 +312,10 @@ section.dateList li p:last-of-type {
 }
 
 @media (max-width: 800px) {
+    p {
+        font-size: 1.1em;
+    }
+
     div.iframeContents {
         display: none;
     }
@@ -447,6 +456,18 @@ section.dateList li p:last-of-type {
 
     section.aboutTitle div h1 {
         width: 100%;
+    }
+
+    section.aboutTitle #portrait {
+        width: 10em;
+    }
+
+    section.specs p.specTitle{
+        font-size: 2em;
+    }
+
+    section.specs p:last-of-type{
+        font-size: 1.2em;
     }
 }
 

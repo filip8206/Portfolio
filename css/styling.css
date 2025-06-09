@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 :root {
@@ -16,21 +17,24 @@ body {
     --color-background-box: #D4D0BA;
     --color-background-box-hover: #b9b5a2; 
     --color-yellow: #FFF828;
-    --color-blue: #F69062;
+    --color-blue: #f93462;
     --color-pink: #E41CAB;
-
     --color-header: #F0EDD8;
     --color-footer: #1d1d1d;
     --color-text: #000000;
-    --color-text-contrast: #FFFFFF
+    --color-text-contrast: #FFFFFF;
 
-    
+    --border-radius: 1em;
 }
 
 body {
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: outfit, komet, helvetica, sans-serif;
+}
+
+img {
+    transform: translateY(0);
 }
 
 ul {
@@ -55,7 +59,7 @@ h1 {
 }
 
 a.bigButton {
-    background-color: var(--color-header);
+    background-color: var(--color-background);
     border: 4px solid var(--color-blue);
     padding: 1.5em;
     color: var(--color-text);
@@ -82,3 +86,15 @@ a.bigButton:hover {
 img.noMockup {
     border-radius: 0.8em;
 }   
+
+a.inlineLink {
+    text-decoration: underline;
+    color: var(--color-blue);
+}
+
+@media (max-width: 800px) {
+    a.bigButton {
+        padding: 1em;
+        font-size: 1em;
+    }
+}
