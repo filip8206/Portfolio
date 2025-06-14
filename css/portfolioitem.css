@@ -218,6 +218,12 @@ section.demo iframe {
     border: none;
 }
 
+section.demo iframe.video {
+    aspect-ratio: 16 / 9;
+    max-width: 50dvw;
+    width: 40em;
+}
+
 section.demo p {
     width: 100%;
 }
@@ -316,8 +322,22 @@ section.dateList li p:last-of-type {
         font-size: 1.1em;
     }
 
+    section.demo {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    section.demo iframe.video {
+        max-width: 100%;
+    }
+
     div.iframeContents {
         display: none;
+    }
+
+    section.demo div.iframeContents.notHidden {
+        display: block;
+        margin-right: 0;
     }
 
     main section p {
