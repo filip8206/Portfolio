@@ -49,8 +49,7 @@ header button {
 }
 
 header button img {
-    height: 1em;
-    margin-top: 0.5em;
+    height: 2em;
 
 }
 
@@ -119,7 +118,7 @@ header nav div {
 }
 
 #projectsDropdown li:hover {
-    background: rgb(255, 114, 147);
+    background: rgb(72, 32, 41);
     width: 110%;
 }
 
@@ -203,11 +202,13 @@ header nav div {
 
     header button {
         display: block;
-        width: 100%;
+        width: 2em;
+        height: 2em;
     }
 
     header img {
         transition-duration: 0.5s;
+        width: 2em;
     }
 
     header #navElements {
@@ -219,7 +220,7 @@ header nav div {
     }
 
     header.mobileExpanded nav ul li:hover { 
-        background: rgb(255, 114, 147);
+        background: rgb(96, 44, 56);
         background-image: none;
     }
 
@@ -267,7 +268,8 @@ header nav div {
     }
 
     header.mobileExpanded #projectsDropdown li:hover {
-        background: rgb(255, 114, 147);
+        background: rgb(96, 44, 56);
+
     }
 
     header.mobileExpanded #projects {

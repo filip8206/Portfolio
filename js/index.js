@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const introSection = document.querySelector('.introduction');
-    const originalParticle = introSection.querySelector('.circleParticle');
+    const originalParticle = introSection.querySelector('.hexParticle'); // <-- updated selector
 
     if (!introSection || !originalParticle) return;
 
@@ -62,11 +62,11 @@ window.addEventListener('DOMContentLoaded', () => {
         const opacity = 0.3 + Math.random() * 0.7;
         clone.style.opacity = opacity;
 
-        // Animate to final position
+        // Animate to final position with rotation
         clone.animate(
             [
-                { left: `${centerX}px`, top: `${centerY}px`, transform: `scale(${scale})` },
-                { left: `${x}px`, top: `${y}px`, transform: `scale(${scale})` }
+                { left: `${centerX}px`, top: `${centerY}px`, transform: `scale(${scale}) rotate(15deg)` },
+                { left: `${x}px`, top: `${y}px`, transform: `scale(${scale}) rotate(15deg)` }
             ],
             {
                 duration: 1800,
@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             clone.style.left = `${x}px`;
             clone.style.top = `${y}px`;
-            clone.style.transform = `scale(${scale})`;
+            clone.style.transform = `scale(${scale}) rotate(15deg)`;
         }, 2200);
 
         particleContainer.appendChild(clone);
