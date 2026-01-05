@@ -74,20 +74,34 @@ a.bigButton {
     font-size: 1.2em;
     transition-duration: 0.3s;
     position: relative;
+    margin-block-end: 1em;
 }
 
 a.bigButton img {
     /* filter: invert(1); */
     width: 1.5em;
     position: absolute;
-    background-color: var(--color-blue);
     right: -1em;
 
 }
 
+a.bigButton.award {
+    border-image: linear-gradient(134deg, rgba(168,168,168,1) 0%, rgba(219,219,219,1) 27%, rgba(171,171,171,1) 51%, rgba(219,219,219,1) 74%, rgba(163,163,163,1) 100%) 1;
+}
+
+
+
 a.bigButton:hover .hexIcon {
     transform: rotate(30deg);
     translate: 20px;
+}
+
+a.bigButton:hover {
+    background-color: rgba(249, 52, 98, 0.2);
+}
+
+a.bigButton.award:hover {
+    background-color: rgba(219, 219, 219, 0.2);
 }
 
 img.noMockup {
@@ -120,6 +134,13 @@ a.inlineLink {
     border: 2px solid var(--color-blue);
     display: flex;
     transition-duration: 0.5s;
+}
+
+.hexIcon.award {
+    /* use a valid gradient background */
+    background: linear-gradient(134deg, rgba(168,168,168,1) 0%, rgba(219,219,219,1) 27%, rgba(171,171,171,1) 51%, rgba(219,219,219,1) 74%, rgba(163,163,163,1) 100%);
+    /* optional: remove or adjust border if you want the gradient to show */
+    border: 2px solid transparent;
 }
 
 .hexIcon img {

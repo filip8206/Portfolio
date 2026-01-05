@@ -5,6 +5,10 @@ let bodyElement = document.querySelector('body');
 
 const projects = [
     {
+        "title": "Academy Central",
+        "link": "./projects/academycentral.html"
+    },
+    {
         "title": "Built to Last.",
         "link": "./projects/builttolast.html"
     },
@@ -19,10 +23,6 @@ const projects = [
     {
         "title": "Climate Claim",
         "link": "./projects/climateclaim.html"
-    },
-    {
-        "title": "First JavaScript Project",
-        "link": "./projects/jsproject.html"
     },
     {
         "title": "Tostada cooking-app",

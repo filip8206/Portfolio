@@ -111,6 +111,12 @@ section.item {
     border-radius: var(--border-radius);
 }
 
+@supports (corner-shape: bevel) {
+    section.item {
+        corner-shape: bevel;
+    }
+}
+
 section.item:hover {
     border: 4px rgba(249, 52, 98, 1) solid;
     background-color: rgba(249, 52, 98, 0.2);
