@@ -13,6 +13,10 @@ const projects = [
         "link": "./projects/builttolast.html"
     },
     {
+        "title": "Home Dashboard",
+        "link": "./projects/homedashboard.html"
+    },
+    {
         "title": "Europa spoort niet",
         "link": "./projects/europaspoortniet.html"
     },
@@ -27,10 +31,6 @@ const projects = [
     {
         "title": "Tostada cooking-app",
         "link": "./projects/tostada.html"
-    },
-    {
-        "title": "PinqPonq Studio",
-        "link": "./projects/pinqponq.html"
     },
     {
         "title": "De Boekenzoeker",

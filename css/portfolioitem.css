@@ -76,6 +76,16 @@ div.photosMobile {
     padding-right: 1em;
 }
 
+div.bigPhoto {
+    width: 100dvw;
+    max-width: 80em;
+    margin-bottom: 5em;
+}
+
+div.bigPhoto img {
+    max-width: 100%;
+}
+
 div.photosMobile img {
     max-width: 27%;
     /* filter: drop-shadow(0px 0px 20px #22222295); */
