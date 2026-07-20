@@ -5,6 +5,10 @@ let bodyElement = document.querySelector('body');
 
 const projects = [
     {
+        "title": "Trackstack",
+        "link": "./projects/trackstack.html"
+    },
+    {
         "title": "Academy Central",
         "link": "./projects/academycentral.html"
     },
@@ -19,10 +23,6 @@ const projects = [
     {
         "title": "Europa spoort niet",
         "link": "./projects/europaspoortniet.html"
-    },
-    {
-        "title": "Coding Duolingo",
-        "link": "./projects/fedproject.html"
     },
     {
         "title": "Climate Claim",
