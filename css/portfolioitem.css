@@ -50,7 +50,7 @@ section:first-of-type img:last-of-type {
 #awardsEmblem {
     height: 5em;
     /* filter: drop-shadow(0 0 10px var(--color-blue)); */
-}  
+}
 
 section:first-of-type h1 {
     max-width: 75%;
@@ -320,14 +320,27 @@ section.dateList li {
     gap: 1em;
 }
 
-section.dateList li p:first-of-type {
-    width: 25dvw;
+section.dateList li>p:first-of-type {
+    width: 100%;
     max-width: 10em;
     font-weight: 600;
 }
 
 section.dateList li p:last-of-type {
     width: 100%;
+}
+
+section.dateList .includingSubtitle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+}
+
+section.dateList .includingSubtitle p:first-of-type {
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 #portraitHex {
@@ -337,14 +350,12 @@ section.dateList li p:last-of-type {
     justify-content: center;
     overflow: hidden;
     /* Hexagon mask, rotated 15deg */
-    clip-path: polygon(
-        50% 0%,
-        93% 25%,
-        93% 75%,
-        50% 100%,
-        7% 75%,
-        7% 25%
-    );
+    clip-path: polygon(50% 0%,
+            93% 25%,
+            93% 75%,
+            50% 100%,
+            7% 75%,
+            7% 25%);
     transform: rotate(15deg);
     order: -1;
     margin: 0;
@@ -559,11 +570,11 @@ section.dateList li p:last-of-type {
         height: 13em;
     }
 
-    section.specs p.specTitle{
+    section.specs p.specTitle {
         font-size: 2em;
     }
 
-    section.specs p:last-of-type{
+    section.specs p:last-of-type {
         font-size: 1.2em;
     }
 }
